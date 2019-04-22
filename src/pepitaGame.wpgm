@@ -20,6 +20,9 @@ program PepitaGame {
 
 //	TECLADO
 	keyboard.h().onPressDo { game.say(pepita, "Hola chiques!") }
+	
+	keyboard.m().onPressDo { pepita.volaAComer(manzana, game.at(5,1))}
+	keyboard.a().onPressDo { pepita.volaAComer(alpiste, game.at(5,5))}
 
 	keyboard.v().onPressDo { pepita.volaHacia(villaGesell) }
 	keyboard.b().onPressDo { pepita.volaHacia(buenosAires) }
